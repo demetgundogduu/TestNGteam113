@@ -1,18 +1,16 @@
-package tests.TestNGFrameworkOlusturma;
+package tests.day14TestNGFrameworkOlusturma;
 
-import org.testng.Assert;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class C03_DependsOnMethods {
+public class C02_Ignore {
+
 
 
     @Test(priority =57 )
     public void youtubeTesti(){
 
         System.out.println("Youtube");
-
-        Assert.assertTrue(8==0);
 
 
 
@@ -23,7 +21,7 @@ public class C03_DependsOnMethods {
 
 
     }
-    @Test(priority = 0)
+    @Test(priority = 0)@Ignore
     public void wiseTesti(){
 
         System.out.println("Wise quarter");
@@ -38,7 +36,7 @@ public class C03_DependsOnMethods {
 
 
     }
-    @Test (dependsOnMethods = "youtubeTesti")
+    @Test(priority = 8)
     public void amazonTesti(){
 
         System.out.println("Amazon");
@@ -51,6 +49,24 @@ public class C03_DependsOnMethods {
 
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
