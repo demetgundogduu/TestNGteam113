@@ -38,9 +38,9 @@ public class AmazonPages {
 
      @FindBy(xpath = "(//img[@class='s-image'])[1]")
     public WebElement ılkUrun;
-    @FindBy(xpath = "(//div[@class='twisterSlotDiv addTwisterPadding'])[1]")
-    public WebElement ılkUrunSonuc;
 
+    @FindBy(id = "style_name_0_price")
+    public WebElement ilkUrunFiyati;
 
 
 
