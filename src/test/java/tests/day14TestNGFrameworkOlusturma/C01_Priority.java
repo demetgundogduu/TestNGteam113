@@ -21,7 +21,7 @@ public class C01_Priority {
 
 
        }
-        @Test(priority = 0)
+        @Test(groups = "minireg1")
      public void wiseTesti(){
 
             System.out.println("Wise quarter");
@@ -36,7 +36,7 @@ public class C01_Priority {
 
 
      }
-      @Test
+      @Test(groups = {"smoke","minireg1"})
       public void amazonTesti(){
 
           System.out.println("Amazon");

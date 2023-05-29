@@ -6,7 +6,7 @@ import pages.QualitydemyPage;
 import utililities.Driver;
 
 public class C02_qualitydemyLoginTesti {
-    @Test
+    @Test(groups = "smoke")
     public void test01(){
 
         //Qualitydemy  anasayfaya gıdın

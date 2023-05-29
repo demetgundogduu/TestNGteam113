@@ -1,5 +1,6 @@
 package tests.day16_POM_Assertions;
 
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QualitydemyPage;
@@ -8,12 +9,14 @@ import utililities.Driver;
 
 public class C05_NegatifTest {
     QualitydemyPage qualitydemyPage=new QualitydemyPage();
+
     @Test
     public void qualityNegatif(){
         //NegativeTest
         //1- https://www.qualitydemy.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("qUrl"));
         //2- login linkine basin
+
         qualitydemyPage.logınLınkı.click();
         //3- Kullanvalid 3 farkli test method’u olusturun.
         //- gecerli username, gecersiz password
@@ -28,6 +31,7 @@ public class C05_NegatifTest {
     public void gecersızSıfre(){
 
          Driver.getDriver().get(ConfigReader.getProperty("qUrl"));
+
          qualitydemyPage.logınLınkı.click();
          qualitydemyPage.emaılKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
          qualitydemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword"));

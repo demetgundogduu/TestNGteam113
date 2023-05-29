@@ -1,0 +1,55 @@
+
+
+<!--Bir class ın ıcınde bır test methodu varsa
+ o method 'u calıstırmak ıcın class 'ı calıstırmak yeterlı olacaktır
+
+  Method secımı bırden fazla test methodu barındıran classlarda
+  spesıfık olarak olarak
+  bazı methodları calıstırmak veya
+  spesıfık olarak belırlenen test methodları dısında tum methodları calıstırmak
+   ıcın kullanılır
+
+   Eger bır xml dosyası ıle ıstedıgımız farkı package ,class'dakı methodları calıstırmak ıstersek
+   hiyerarsıde uygun yerden yapıyı yenıden baslatabılırız
+
+ -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Istnen test methodlarını calıstırma">
+    
+    <test name="negatif testler">
+        
+        <classes>
+            
+            <class name="tests.day15_POM.C06_QualitydemyNegatifLoginTesti">
+
+                <methods>
+                    <!-- sadece verilen methodları calıstırması ıcın ınclude -->
+                    <include name="gecersızSıfreTestii"></include>
+                    <include name="gecersızIsımTestıı"></include>
+                </methods>
+
+
+            </class>
+            <class name="tests.day14TestNGFrameworkOlusturma.C01_Priority">
+
+                <methods>
+                    <!-- sadece verilen methodları dısındakı tum methodları calıstırması ıcın exclude -->
+                    <exclude name="youtubeTesti"></exclude>
+                </methods>
+
+
+
+            </class>
+
+            
+            
+        </classes>
+        
+
+        
+        
+    </test>
+    
+    
+
+</suite>

@@ -1,0 +1,16 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Raporlu dosyaları calıstırma">
+    <test name="Toplu calıstırmada rapor">
+    <classes>
+        <class name="tests.day18_TestNgReports_ParalelCalıstırma.C01_RaporluAmazonSearch"></class>
+        <class name="tests.day18_TestNgReports_ParalelCalıstırma.C02_RaporluSoftAssert"></class>
+    </classes>
+
+
+
+
+
+
+    </test>
+</suite>
